@@ -1,9 +1,10 @@
 import CardItem from './_components/card-item'
+import Navbar from './_components/navigation-menu'
 
 export default function Home() {
   return (
     <div>
-      <h1>Portal de Vagas</h1>
+      <Navbar />
       <CardItem />
     </div>
   )
