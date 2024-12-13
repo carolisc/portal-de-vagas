@@ -2,7 +2,7 @@
 	"name": "portal-de-vagas",
 	"version": "0.1.0",
 	"engines": {
-		"node": "20.12.2",
+		"node": ">=20.12.2",
 		"npm": "10.6.0"
 	},
 	"scripts": {
