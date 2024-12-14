@@ -1,70 +1,70 @@
 {
-	"name": "portal-de-vagas",
-	"version": "0.1.0",
-	"engines": {
-		"node": ">=20.12.2",
-		"npm": "10.6.0"
-	},
-	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
-		"start": "next start",
-		"lint": "next lint",
-		"prepare": "husky",
-		"commit": "git add . && cz"
-	},
-	"prisma": {
-		"seed": "ts-node ./prisma/seed.ts"
-	},
-	"dependencies": {
-		"@radix-ui/react-navigation-menu": "^1.2.1",
-		"class-variance-authority": "^0.7.0",
-		"clsx": "^2.1.1",
-		"init": "^0.1.2",
-		"lucide-react": "^0.377.0",
-		"next": "14.2.3",
-		"react": "^18",
-		"react-dom": "^18",
-		"shadcn": "^2.1.6",
-		"tailwind-merge": "^2.3.0",
-		"tailwindcss-animate": "^1.0.7"
-	},
-	"devDependencies": {
-		"@commitlint/cli": "^19.3.0",
-		"@commitlint/config-conventional": "^19.2.2",
-		"@prisma/client": "5.13.0",
-		"@types/node": "^20",
-		"@types/react": "^18",
-		"@types/react-dom": "^18",
-		"commitizen": "^4.3.0",
-		"cz-conventional-changelog": "^3.3.0",
-		"eslint": "^8",
-		"eslint-config-next": "14.2.3",
-		"eslint-config-prettier": "^9.1.0",
-		"husky": "^9.0.11",
-		"lint-staged": "^15.2.2",
-		"postcss": "^8",
-		"prettier": "^3.2.5",
-		"prettier-plugin-tailwindcss": "^0.5.14",
-		"prisma": "^5.13.0",
-		"tailwindcss": "^3.4.1",
-		"ts-node": "^10.9.2",
-		"typescript": "^5"
-	},
-	"lint-staged": {
-		"**/*.{ts,tsx}": [
-			"npx eslint --fix",
-			"npx prettier --write"
-		]
-	},
-	"config": {
-		"commitizen": {
-			"path": "./node_modules/cz-conventional-changelog"
-		}
-	},
-	"description": "",
-	"main": "",
-	"repository": "",
-	"author": "",
-	"license": ""
+  "name": "portal-de-vagas",
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=20.12.2",
+    "npm": "10.6.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prepare": "husky",
+    "commit": "git add . && cz"
+  },
+  "prisma": {
+    "seed": "ts-node ./prisma/seed.ts"
+  },
+  "dependencies": {
+    "@radix-ui/react-navigation-menu": "^1.2.1",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "init": "^0.1.2",
+    "lucide-react": "^0.377.0",
+    "next": "14.2.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "shadcn": "^2.1.6",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@prisma/client": "5.13.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "postcss": "^8",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.14",
+    "prisma": "^5.13.0",
+    "tailwindcss": "^3.4.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5"
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx}": [
+      "npx eslint --fix",
+      "npx prettier --write"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "description": "",
+  "main": "",
+  "repository": "",
+  "author": "",
+  "license": ""
 }
