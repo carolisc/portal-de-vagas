@@ -14,6 +14,10 @@ Comando para rodar o projeto em ambiente de desenvolvimento:
 yarn dev
 ```
 
+## Veja o Projeto na Vercel
+
+https://portal-de-vagas-4j9fwn58t-caroliscs-projects.vercel.app
+
 ## Participantes do Projeto
 
 | Nome             | GitHub                                             | Avatar                                                          |
