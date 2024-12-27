@@ -21,6 +21,7 @@ jobs:
         run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
   deployment-production:
     runs-on: ubuntu-latest
+    needs: Preview
     steps:
       - uses: actions/checkout@v2
       - name: Install Vercel CLI
