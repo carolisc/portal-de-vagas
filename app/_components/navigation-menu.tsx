@@ -1,5 +1,5 @@
 import { NavigationMenu, NavigationMenuList } from '@radix-ui/react-navigation-menu'
-import { BriefcaseBusinessIcon, CameraIcon, Heart, User } from 'lucide-react'
+import { BriefcaseBusinessIcon, CameraIcon, User, Bookmark } from 'lucide-react'
 
 const Navbar = () => {
   return (
@@ -16,7 +16,7 @@ const Navbar = () => {
           <h2 className="text-sm font-medium">Vagas</h2>
         </div>
         <div className="flex cursor-pointer items-center gap-2 hover:text-blue-500">
-          <Heart className="h-6 w-6" />
+          <Bookmark className="h-6 w-6" />
           <h2 className="text-sm font-medium">Salvos</h2>
         </div>
         <div className="flex cursor-pointer items-center gap-2 hover:text-blue-500">
