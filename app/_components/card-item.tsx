@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Card, CardHeader, CardTitle, CardDescription } from './ui/card'
 import { Calendar, MapPin, UserRound, Share2, Bookmark } from 'lucide-react'
+import Modal from './modal'
 
 interface CardItemProps {
   data: {
@@ -45,6 +46,9 @@ const CardItem = ({ data }: CardItemProps) => {
               <Bookmark className="w-5" />
             </div>
           </CardDescription>
+          <div className="flex justify-center p-2">
+            <Modal />
+          </div>
         </CardHeader>
       </Card>
     </div>
