@@ -1,18 +1,14 @@
-# Portal de Vagas
+<h1 align=center>
+  Portal de Vagas
+</h1>
 
-## Como Rodar o Projeto
+Projeto de front-end para o TCC da escola de programacão imagine on.
 
-Instalação de dependências:
+Acessar o [figma]() do projeto.
 
-```bash
-yarn add
-```
+Acessar a [documentação](./app/docs/index.md) do projeto.
 
-Comando para rodar o projeto em ambiente de desenvolvimento:
-
-```bash
-yarn dev
-```
+Versão 1.0.0
 
 ## Veja o Projeto na Vercel
 
