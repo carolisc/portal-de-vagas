@@ -1,15 +1,5 @@
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from './ui/alert-dialog'
-// import { Button } from './ui/button'
+import { Dialog, DialogContent, DialogHeader, DialogTrigger } from './ui/dialog'
+import { Calendar, MapPin, UserRound, Share2, Bookmark } from 'lucide-react'
 
 interface ModalItemProps {
   data: {
@@ -25,30 +15,42 @@ interface ModalItemProps {
   }
 }
 
-const Modal = () => {
+const Modal = ({ data }: ModalItemProps) => {
   return (
-    <div>
-      <AlertDialog className="h-585 w-971">
-        <AlertDialogTrigger>Candidatar-se</AlertDialogTrigger>
-        <AlertDialogContent className="h-585 w-971">
-          <AlertDialogHeader className="h-585 w-971">
-            <AlertDialogTitle>Cargo</AlertDialogTitle>
-            <AlertDialogDescription>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-              dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum
-            </AlertDialogDescription>
-          </AlertDialogHeader>
-          <AlertDialogFooter>
-            <AlertDialogCancel>Fechar</AlertDialogCancel>
-            <AlertDialogAction>Candidatar-se</AlertDialogAction>
-          </AlertDialogFooter>
-        </AlertDialogContent>
-      </AlertDialog>
-    </div>
+    <Dialog>
+      <DialogTrigger asChild>
+        <p className="cursor-pointer">Candidate-se</p>
+      </DialogTrigger>
+      <DialogContent className="h-585 max-w-[971px]">
+        <DialogHeader className="flex flex-col lg:flex-row">
+          <div className="flex justify-center lg:w-1/3">
+            <img src={data.image} alt={data.title} />
+          </div>
+
+          <div className="flex flex-wrap justify-center lg:w-2/3">
+            <h1>{data.title}</h1>
+            <p>{data.description}</p>
+          </div>
+        </DialogHeader>
+
+        <div>
+          <div className="flex justify-between">
+            <div className="flex items-center gap-6">
+              <UserRound className="w-4 text-gray-500" />
+              <h2 className="text-sm font-medium text-gray-700">{data.name}</h2>
+            </div>
+            <div className="flex items-center gap-6">
+              <MapPin className="w-4 text-gray-500" />
+              <p className="text-sm text-gray-600">{data.distance}</p>
+            </div>
+            <div className="flex items-center gap-6">
+              <Calendar className="w-4 text-gray-500" />
+              <p className="text-sm text-gray-600">{data.daysAgo}</p>
+            </div>
+          </div>
+        </div>
+      </DialogContent>
+    </Dialog>
   )
 }
 
