@@ -1,11 +1,16 @@
 import Image from 'next/image'
 import { Card, CardHeader, CardTitle, CardDescription } from './ui/card'
 import { Calendar, MapPin, UserRound, Share2, Bookmark } from 'lucide-react'
+import Modal from './modal'
 
 interface CardItemProps {
   data: {
     image: string
     title: string
+    description: string
+    company: string
+    email: string
+    contract: string
     name: string
     distance: string
     daysAgo: string
@@ -26,7 +31,7 @@ const CardItem = ({ data }: CardItemProps) => {
           />
           <CardTitle className="mt-2 text-lg font-bold text-gray-800">{data.title}</CardTitle>
           <CardDescription className="relative mt-2 flex flex-row">
-            <div className="">
+            <div>
               <div className="flex items-center gap-1">
                 <UserRound className="w-4 text-gray-500" />
                 <h2 className="text-sm font-medium text-gray-700">{data.name}</h2>
@@ -45,6 +50,21 @@ const CardItem = ({ data }: CardItemProps) => {
               <Bookmark className="w-5" />
             </div>
           </CardDescription>
+          <div className="flex justify-center p-2">
+            <Modal
+              data={{
+                image: data.image,
+                title: data.title,
+                description: data.description,
+                company: data.company,
+                email: data.email,
+                contract: data.contract,
+                name: data.name,
+                distance: data.distance,
+                daysAgo: data.daysAgo,
+              }}
+            />
+          </div>
         </CardHeader>
       </Card>
     </div>
