@@ -1,7 +1,7 @@
 # Padrões de Git
 
 ## Branches
-As branches deverão ser escritas em português com letras minúsculas.
+As branches deverão ser escritas em inglês com letras minúsculas.
 
 ### Nomenclatura
 Deve seguir a nomenclatura:
@@ -10,7 +10,7 @@ Deve seguir a nomenclatura:
 <br>Ficando da seguinte forma: **feat/branch-name**.
 
 ## Commits
-Estamos usando a lib comitizem para automatizar o processo de commit usando convesão de commit. 
+Estamos usando a lib comitizen para automatizar o processo de commit usando convesão de commit. 
 
 Para iniciar um commit use:
 ```sh

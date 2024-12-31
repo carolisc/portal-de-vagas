@@ -4,7 +4,7 @@
 
 Projeto de front-end para o TCC da escola de programacão imagine on.
 
-Acessar o [figma]() do projeto.
+Acessar o [figma](https://www.figma.com/design/jRpLZkUZelhSg0Swor2QpP/Site-de-Vagas?node-id=0-1&t=UtfQNexiaX3snlhL-1) do projeto.
 
 Acessar a [documentação](./app/docs/index.md) do projeto.
 
@@ -12,7 +12,7 @@ Versão 1.0.0
 
 ## Veja o Projeto na Vercel
 
-https://portal-de-vagas-4j9fwn58t-caroliscs-projects.vercel.app
+https://portal-de-vagas-beige.vercel.app/
 
 ## Participantes do Projeto
 
