@@ -1,5 +1,12 @@
 import { NavigationMenu, NavigationMenuList } from '@radix-ui/react-navigation-menu'
-import { BriefcaseBusinessIcon, CameraIcon, User, Bookmark } from 'lucide-react'
+import { BriefcaseBusinessIcon, CameraIcon, User } from 'lucide-react'
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '../../../_components/ui/dropdown-menu'
+import Link from 'next/link'
 
 const Navbar = () => {
   return (
@@ -21,7 +28,20 @@ const Navbar = () => {
         </div>
         <div className="flex cursor-pointer items-center gap-2 hover:text-blue-500">
           <User className="h-6 w-6" />
-          <h2 className="text-sm font-medium">Perfil</h2>
+          <DropdownMenu>
+            <DropdownMenuTrigger className="text-sm font-medium">Perfil</DropdownMenuTrigger>
+            <DropdownMenuContent className="mt-4 bg-gray-100">
+              <DropdownMenuItem>
+                <Link href="/pages/home/user-data">Meus Dados</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href="/pages/home/saved-jobs">Vagas Salvas</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href="/">Sair</Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
       </NavigationMenuList>
     </NavigationMenu>
