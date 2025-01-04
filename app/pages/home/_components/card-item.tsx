@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Card, CardHeader, CardTitle, CardDescription } from './ui/card'
+import { Card, CardHeader, CardTitle, CardDescription } from '../../../_components/ui/card'
 import { Calendar, MapPin, UserRound, Share2, Bookmark } from 'lucide-react'
 import Modal from './modal'
 

@@ -1,6 +1,6 @@
-import { Dialog, DialogContent, DialogHeader, DialogTrigger } from './ui/dialog'
+import { Dialog, DialogContent, DialogHeader, DialogTrigger } from '../../../_components/ui/dialog'
 import { Calendar, MapPin, Share2, Bookmark } from 'lucide-react'
-import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar'
+import { Avatar, AvatarFallback, AvatarImage } from '../../../_components/ui/avatar'
 import { Container } from 'postcss'
 
 interface ModalItemProps {
