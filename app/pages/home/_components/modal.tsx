@@ -1,5 +1,7 @@
 import { Dialog, DialogContent, DialogHeader, DialogTrigger } from './ui/dialog'
-import { Calendar, MapPin, UserRound, Share2, Bookmark } from 'lucide-react'
+import { Calendar, MapPin, Share2, Bookmark } from 'lucide-react'
+import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar'
+import { Container } from 'postcss'
 
 interface ModalItemProps {
   data: {
@@ -19,33 +21,38 @@ const Modal = ({ data }: ModalItemProps) => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <p className="cursor-pointer">Candidate-se</p>
+        <p className="cursor-pointer">Ver mais</p>
       </DialogTrigger>
-      <DialogContent className="h-585 max-w-[971px]">
-        <DialogHeader className="flex flex-col lg:flex-row">
-          <div className="flex justify-center lg:w-1/3">
-            <img src={data.image} alt={data.title} />
-          </div>
-
-          <div className="flex flex-wrap justify-center lg:w-2/3">
-            <h1>{data.title}</h1>
+      <DialogContent className="flex max-w-[971px] flex-col lg:flex-row">
+        <div className="flex h-80 w-80 justify-center lg:w-1/3 ">
+          <img className="rounded-md" src={data.image} alt={data.title} />
+        </div>
+        <div className="flex flex-wrap justify-center lg:w-2/3 ">
+          <div className="flex flex-col gap-3">
+            <div className="flex flex-row">
+              <Avatar className="mr-6">
+                <AvatarImage src="https://github.com/shadcn.png" />
+                <AvatarFallback>CN</AvatarFallback>
+              </Avatar>
+              <h1 className="flex items-center text-lg text-gray-700">{data.name}</h1>
+            </div>
+            <h2 className="text-lg font-bold">{data.title}</h2>
             <p>{data.description}</p>
           </div>
-        </DialogHeader>
-
-        <div>
-          <div className="flex justify-between">
-            <div className="flex items-center gap-6">
-              <UserRound className="w-4 text-gray-500" />
-              <h2 className="text-sm font-medium text-gray-700">{data.name}</h2>
+          <div className="flex flex-row items-center space-x-96">
+            <div className="flex flex-col">
+              <div className="flex flex-row gap-2">
+                <MapPin className="w-5" />
+                <p className="text-lg">{data.distance}</p>
+              </div>
+              <div className="flex flex-row gap-2">
+                <Calendar className="w-5" />
+                <p className="text-lg">{data.daysAgo}</p>
+              </div>
             </div>
-            <div className="flex items-center gap-6">
-              <MapPin className="w-4 text-gray-500" />
-              <p className="text-sm text-gray-600">{data.distance}</p>
-            </div>
-            <div className="flex items-center gap-6">
-              <Calendar className="w-4 text-gray-500" />
-              <p className="text-sm text-gray-600">{data.daysAgo}</p>
+            <div className="flex">
+              <Share2 className="w-5" />
+              <Bookmark className="w-5" />
             </div>
           </div>
         </div>
