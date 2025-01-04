@@ -1,7 +1,7 @@
 import CardItem from './_components/card-item'
 import Navbar from './_components/navigation-menu'
 import Map from './_components/map'
-import { cardData } from './data'
+import { cardData } from '../../data'
 // import Modal from './_components/modal'
 
 export default function Home() {
