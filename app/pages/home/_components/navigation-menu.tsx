@@ -16,12 +16,8 @@ const Navbar = () => {
           <h2 className="text-sm font-medium">Vagas</h2>
         </div>
         <div className="flex cursor-pointer items-center gap-2 hover:text-blue-500">
-          <Bookmark className="h-6 w-6" />
-          <h2 className="text-sm font-medium">Salvos</h2>
-        </div>
-        <div className="flex cursor-pointer items-center gap-2 hover:text-blue-500">
           <CameraIcon className="h-6 w-6" />
-          <h2 className="text-sm font-medium">Postar Vaga</h2>
+          <h2 className="text-sm font-medium">Cadastrar Vaga</h2>
         </div>
         <div className="flex cursor-pointer items-center gap-2 hover:text-blue-500">
           <User className="h-6 w-6" />

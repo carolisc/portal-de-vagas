@@ -39,6 +39,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
-
       - name: Deploy Project to Production
         run: vercel --prod --token=${{ secrets.VERCEL_TOKEN }}
